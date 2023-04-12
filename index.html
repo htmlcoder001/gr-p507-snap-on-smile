@@ -203,7 +203,7 @@ a:visited,
                 transform: translate(-50%, -50%);
             }
             .webt-logo__img {
-            
+                max-width: 100%;
             }
             .webt-top__actions {
                 display: block;
@@ -344,8 +344,9 @@ a:visited,
                     font-size: 32px;
                 }
                 .webt-subheader__head {
-                    height: 150px;
+                    height: auto;
                     gap: 12px;
+                    padding: 24px 0;
                 }
                 .webt-head__text {
                     font-size: 14px;
@@ -356,6 +357,10 @@ a:visited,
                     overflow-x: scroll;
                     justify-content: flex-start;
                     padding: 0 12px;
+                    height: 36px;
+                }
+                .webt-nav__link, .webt-nav__link:focus, .webt-nav__link:active {
+                    font-size: 12px;
                 }
             }
         </style>
@@ -891,8 +896,9 @@ a:visited,
                                 font-size: 12px!important;
                                 margin: 0!important;
                                 margin-bottom: 16px!important;
-                                padding: 0 10px!important;
+                                padding: 0!important;
                                 font-family: sans-serif!important;
+                                max-width: 80px;
                             }
                             .emodji {
                                 cursor: pointer;
@@ -917,7 +923,7 @@ a:visited,
                             .knopka:hover,
                             .knopka:focus {
                                 padding: 20px;
-                                background-color: green;
+                                background-color: black;
                                 font-size: 30px;
                                 color: #fff;
                                 border-radius: 50px;
@@ -927,8 +933,23 @@ a:visited,
                                 display: block;
                                 max-width: 400px;
                                 margin: 0 auto;
-                                font-family: sans-serif!important;
                                 text-decoration: none;
+                            }
+
+                            @media (max-width: 768px) {
+                                .knopka, .knopka:hover, .knopka:focus {
+                                    padding: 16px;
+                                    font-size: 21px;
+        
+                                }
+                            }
+                            @media (max-width: 475px) {
+                                .down-menu {
+                                    white-space: nowrap;
+                                    justify-content: flex-start;
+                                    flex-wrap: nowrap;
+                                    overflow-x: scroll;
+                                }
                             }
                         </style>
                         <div class="vk-container" style="float: none">
